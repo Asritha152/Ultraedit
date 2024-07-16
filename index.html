@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultraedit navigation bar</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+       
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            column-gap: 40px;
+            align-items: center;
+
+        }
+
+        .languagevec img {
+            width: 40px;
+        }
+
+        .logo img {
+            width: 170px;
+        }
+
+        header {
+            padding: 10px;
+            margin: auto;
+        }
+
+        li span {
+            font-weight: 500;
+            font-size: large;
+            padding: 3px;
+            position: relative;
+            bottom: 5px;
+        }
+
+        .mainheading {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .mainheading h1 {
+            font-size: 3.5rem;
+            font-weight: 400;
+
+        }
+
+        .mainheading p {
+            font-size: 1.5rem;
+            font-weight: 450;
+        }
+
+        .mainheading button {
+            margin: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: rgb(6, 184, 255);
+            border: none;
+            color: antiquewhite;
+            font-weight: 750;
+        }
+
+        .mainheading button:hover {
+            background-color: rgb(3, 108, 150);
+        }
+
+        .heading .image {
+            border-radius: 50%;
+            border: 4px solid black;
+            padding: 10px;
+            font-size: 40px;
+            background-color: rgb(248, 248, 7);
+            font-weight: bolder;
+            margin-right: 10px;
+        }
+
+        .heading {
+            font-size: 30px;
+            text-align: left;
+            margin: 30px;
+        }
+
+        .releaseinfo {
+            font-size: 17px;
+        }
+
+        .grid-container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+
+        }
+
+        .box {
+            height: 250px;
+            width: 100%;
+            max-width: 400px;
+            background-color: rgb(229, 224, 224);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .hash {
+            width: 100%;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .hash p {
+            padding: 2px;
+        }
+
+        .ue_copied_hash {
+            word-wrap: break-word;
+            /* Ensure the text breaks to fit the container */
+            /*overflow-wrap: break-word;*/
+            /* Alternative property for better browser support */
+
+        }
+
+        .box .button {
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: rgb(3, 141, 3);
+            padding: 5px;
+            border: none;
+
+        }
+
+        .button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .hash:hover,
+        .button:hover {
+            cursor: pointer;
+        }
+        @media (max-width: 1200px) {
+            .mainheading h1 {
+                font-size: 2.2rem;
+            }
+
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .mainheading p {
+                font-size: 1.1rem;
+            }
+        }
+        @media screen and (max-width: 700px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .mainheading h1 {
+                font-size: 2.5rem;
+                font-weight: 300;
+            }
+
+            .mainheading p {
+                font-size: 0.8rem;
+            }
+
+            .box {
+                gap: 10px;
+                width: 100%; /* Ensure boxes take full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="UE-Logo-1.webp" alt="Ultraedit">
+            </div>
+
+            <ul>
+
+                <li>Products <span>⌄</span>
+                </li>
+                <li>Pricing<span>⌄</span></li>
+                <li>Resources<span>⌄</span></li>
+                <li>About us<span>⌄</span></li>
+                <li>Security and compliance</li>
+                <li class="languagevec"><img src="languagevec.png" alt=""></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="mainheading">
+            <h1>Download <b>UltraEdit</b> for Windows &nbsp;<span><img src="Reviews.png" alt=""></span></h1>
+            <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+                editor.</p>
+            <button class="button">DOWNLOAD MAC OR LINUX VERSION</button>
+        </div>
+        <div class="heading"><span class="image">UE</span>Download UltraEdit <span class="releaseinfo">v2024.0(released
+                04/19/2024) | Hotfix</span></div>
+        <div class="grid-container">
+            <div class="box box1">
+                <h3>English</h3>
+                <h4></h4>
+                <div class="button"><a href="">Download 64-bit</a></div>
+                <div class="hash">
+                    <p>SHA256</p>
+                    <p class="ue_copied_hash">
+                        AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+                    <p>C08EB2</p>
+                </div>
+            </div>
+            <div class="box box2">
+                <h3>Deutsch</h3>
+                <h4>German</h4>
+                <div class="button"><a href="">Download 64-bit</a></div>
+                <div class="hash">
+                    <p>SHA256</p>
+                    <p class="ue_copied_hash">F33B9A2FACED863D26B8FA5AC0979F053FD29A6DC37888AA0E262F566AA
+                    </p>
+                    <p>BEFE9</p>
+                </div>
+            </div>
+            <div class="box box3">
+                <h3>Italiano</h3>
+                <h4>Italian</h4>
+                <div class="button"><a href="">Download 64-bit</a></div>
+                <div class="hash">
+                    <p>SHA256</p>
+                    <p class="ue_copied_hash">
+                        D5E23579FD67132828FFC74E2B08F9B878BDFA515217ACCA8B58F6A0C6E5</p>
+                    <p>DD54</p>
+                </div>
+            </div>
+            <div class="box box4">
+                <h3>English</h3>
+                <h4></h4>
+                <div class="button"><a href="">Download 64-bit</a></div>
+                <div class="hash">
+                    <p>SHA256</p>
+                    <p class="ue_copied_hash">
+                        AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+                    <p>C08EB2</p>
+                </div>
+            </div>
+            <div class="box box5">
+                <h3>English</h3>
+                <h4></h4>
+                <div class="button"><a href="">Download 64-bit</a></div>
+                <div class="hash">
+                    <p>SHA256</p>
+                    <p class="ue_copied_hash">
+                        AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+                    <p>C08EB2</p>
+                </div>
+            </div>
+            <div class="box box6">
+                <h3>English</h3>
+                <h4></h4>
+                <div class="button"><a href="">Download 64-bit</a></div>
+                <div class="hash">
+                    <p>SHA256</p>
+                    <p class="ue_copied_hash">
+                        AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+                    <p>C08EB2</p>
+                </div>
+            </div>
+            <div class="box box7">
+                <h3>English</h3>
+                <h4></h4>
+                <div class="button"><a href="">Download 64-bit</a></div>
+                <div class="hash">
+                    <p>SHA256</p>
+                    <p class="ue_copied_hash">
+                        AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+                    <p>C08EB2</p>
+                </div>
+            </div>
+            <div class="box box8">
+                <h3>English</h3>
+                <h4></h4>
+                <div class="button"><a href="">Download 64-bit</a></div>
+                <div class="hash">
+                    <p>SHA256</p>
+                    <p class="ue_copied_hash">
+                        AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+                    <p>C08EB2</p>
+                </div>
+            </div>
+            <div class="box box9">
+                <h3>English</h3>
+                <h4></h4>
+                <div class="button"><a href="">Download 64-bit</a></div>
+                <div class="hash">
+                    <p>SHA256</p>
+                    <p class="ue_copied_hash">
+                        AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+                    <p>C08EB2</p>
+                </div>
+            </div>
+            <div class="box box10">
+                <h3>English</h3>
+                <h4></h4>
+                <div class="button"><a href="">Download 64-bit</a></div>
+                <div class="hash">
+                    <p>SHA256</p>
+                    <p class="ue_copied_hash">
+                        AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+                    <p>C08EB2</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
